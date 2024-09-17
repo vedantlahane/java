@@ -31,5 +31,6 @@ public class SameEleInRowsHash {
                 System.out.println(arr[0][i] + " is present in all rows.");
             }
         }
+        sc.close();
     }
 }
