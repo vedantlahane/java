@@ -54,6 +54,7 @@ public class ProductOfArrayExceptSelf {
         for(int i = 0; i < n; i++){
             System.out.print(ans[i] + " ");
         }
+        sc.close();
     }
     
 }
