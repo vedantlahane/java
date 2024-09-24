@@ -61,6 +61,7 @@ public class MinEleInAStack {
                     }
                     break;
                 case 5:
+                    sc.close();
                     System.exit(0);
                     break;
                 default:
