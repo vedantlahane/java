@@ -1,3 +1,23 @@
+// Problem Statement: Missing Characters to Make a String Pangram
+// A pangram is a sentence that contains every letter of the alphabet at least once. In this problem, you are given a string and need to determine which letters are missing to make it a pangram. Your task is to write a method that returns a list of missing characters.
+
+// Input
+// A single string input (1 ≤ length of input ≤ 1000) that may contain uppercase and lowercase letters, digits, spaces, and punctuation marks. The string may contain duplicates and can be in any case.
+// Output
+// A list of characters (in lowercase) that are missing from the input string to make it a pangram. The output should be sorted in alphabetical order.
+// Example
+// Input: "The quick brown fox jumps over the lazy dog"
+
+// Output: [] (since it is already a pangram)
+// Input: "Hello World"
+
+// Output: ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+// Input: "Pack my box with five dozen liquor jugs"
+
+// Output: [] (since it is already a pangram)
+// Constraints
+// The input string may include any printable ASCII characters.
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
