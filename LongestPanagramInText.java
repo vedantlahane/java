@@ -15,14 +15,44 @@
 
 
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 public class LongestPanagramInText {
-    public static void main( String args[]){
-        scanner sc = new Scanner( System.in);
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter a paragraph: ");
         String paragraph = sc.nextLine();
         sc.close();
         String[] sentences = paragraph.split("[.!?]");
-        String longestPangram = "";
-        
+        List<String> longestPangrams = new ArrayList<>();
+        int maxLength = 0;
+
+        for (String sentence : sentences) {
+            if (isPangram(sentence)) {
+                int length = sentence.length();
+                if (length > maxLength) {
+                    longestPangrams.clear();
+                    longestPangrams.add(sentence.trim());
+                    maxLength = length;
+                } else if (length == maxLength) {
+                    longestPangrams.add(sentence.trim());
+                }
+            }
+        }
+        sc.close();
+
+        System.out.println("Longest Pangram Sentences: " + longestPangrams);
+    }
+
+    private static boolean isPangram(String sentence) {
+        Set<Character> alphabetSet = new HashSet<>();
+        for (char c : sentence.toLowerCase().toCharArray()) {
+            if (Character.isLetter(c)) {
+                alphabetSet.add(c);
+            }
+        }
+        return alphabetSet.size() == 26;
     }
 }
