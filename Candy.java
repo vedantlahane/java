@@ -1,3 +1,9 @@
+// Problem Statement:
+// Given the number of children and their respective ratings, distribute candies to the children such that:
+// 1. Each child must have at least one candy.
+// 2. Children with a higher rating get more candies than their neighbors.
+// The goal is to determine the minimum number of candies required to satisfy these conditions.
+
 import java.util.Scanner;
 public class Candy {
     public static void main( String args[] ){
