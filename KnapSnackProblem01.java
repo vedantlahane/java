@@ -1,3 +1,37 @@
+
+
+
+/**
+ * This program solves the 0/1 Knapsack Problem using dynamic programming.
+ * 
+ * Problem Statement:
+ * Given a set of items, each with a weight and a value, determine the number of each item to include in a collection 
+ * so that the total weight is less than or equal to a given limit and the total value is as large as possible.
+ * 
+ * The 0/1 Knapsack Problem does not allow breaking of items. You either take the whole item or don't take it at all.
+ * 
+ * Input:
+ * - The number of items (n).
+ * - The maximum weight capacity of the knapsack (w).
+ * - The weights of the items (wt[]).
+ * - The values of the items (val[]).
+ * 
+ * Output:
+ * - The maximum value that can be obtained with the given weight capacity.
+ * 
+ * Example:
+ * Enter the number of items and the weight of the knapsack
+ * 4 50
+ * Enter the weight and value of the items
+ * Enter the weight of the items
+ * 10 20 30 40
+ * Enter the value of the items
+ * 60 100 120 240
+ * The maximum value that can be obtained is:
+ * 360
+ */
+
+ 
 import java.util.Scanner;
 public class KnapSnackProblem01 {
     public static void main( String args[] ){
