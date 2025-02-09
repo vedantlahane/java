@@ -1,6 +1,6 @@
-package Tree.LinkedList;
+package LinkedList;
 import java.util.Scanner;
-public class RemoveDuplicateFromSortedLL {
+public class InsertAtBeginning {
     public static class Node{
         Node next;
         int data;
@@ -23,19 +23,6 @@ public class RemoveDuplicateFromSortedLL {
         }
     }
 
-    public static Node removeDuplicate(Node head){
-        Node curr = head;
-        while(curr != null && curr.next != null){
-            if(curr.data == curr.next.data){
-                curr.next = curr.next.next;
-            }
-            else{
-                curr = curr.next;
-            }
-        }
-        return head;
-    }
-
     public static void main( String args[]){
         Scanner sc = new Scanner(System.in);
         Node head = null;
@@ -45,7 +32,6 @@ public class RemoveDuplicateFromSortedLL {
             head = insert(head, data);
             
         }
-        head = removeDuplicate(head);
         print(head);
         sc.close();
         

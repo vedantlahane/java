@@ -1,4 +1,4 @@
-package Tree.LinkedList;
+package LinkedList;
 import java.util.Scanner;
 public class ReverseLinkedList {
     public class  Node{

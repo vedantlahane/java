@@ -1,4 +1,4 @@
-package Tree.LinkedList;
+package LinkedList;
 
 public class NthNodeFromEnd {
     
