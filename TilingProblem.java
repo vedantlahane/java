@@ -38,6 +38,7 @@ public class TilingProblem {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         recursive(n);
+        sc.close();
     }
     
 }

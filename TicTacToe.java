@@ -220,6 +220,7 @@ public class TicTacToe{
                     moveIndex++; // Increment move count
                     whoseTurn = HUMAN; // Switch to human's turn
                 }
+                
             } else if (whoseTurn == HUMAN) {
                 Scanner scanner = new Scanner(System.in);
                 System.out.print("\n" + (isTwoPlayer ? "Player 1" : "HUMAN") + 
@@ -238,6 +239,7 @@ public class TicTacToe{
                 } else {
                     System.out.println("\nInvalid move! Try again."); // Invalid move
                 }
+                scanner.close();
             }
         }
 

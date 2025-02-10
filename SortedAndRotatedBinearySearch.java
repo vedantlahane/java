@@ -39,5 +39,7 @@ public class SortedAndRotatedBinearySearch {
         } else {
             System.out.println("Element found at index: " + result);
         }
+
+        sc.close();
     }
 }
