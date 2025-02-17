@@ -14,7 +14,9 @@ public class LongestCommonSubsequence {
         }
 
     }
-    public static int lcs( String s1, String s2, int dp[][] ){
+    public static int lcs( String s1, String s2, int dp[][] ){// memoization 
+        // dp[ i ][ j ] stores the length of the longest common subsequence of the strings s1[ 0...i-1 ] and s2[ 0...j-1 ]
+        // dp[ i ][ j ] = -1 means that the length of the longest common subsequence of the strings s1[ 0...i-1 ] and s2[ 0...j-1 ] is not yet calculated
         int m = s1.length();
         int n = s2.length();
         if ( m == 0 || n == 0 ){
@@ -30,7 +32,7 @@ public class LongestCommonSubsequence {
             return dp[ m ][ n ] = Math.max( lcs( s1.substring( 0, m - 1 ), s2, dp ), lcs( s1, s2.substring( 0, n - 1 ), dp ) );
         }
     }
-    public int lcs ( String s1, String s2, int m , int n){
+    public int lcs ( String s1, String s2, int m , int n){// tabulation
             int l[][] = new int[ m+1 ][ n+1 ];
             for( int i = 0 ; i <= m ; i++ ){
                 for( int j = 0 ; j <= n ; j++ ){
