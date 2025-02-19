@@ -62,13 +62,19 @@ public class TravellAroundTheWorld {
         for( int i = 0; i < N; i++ ){
             b[i] = sc.nextLong();
         }
-        long total = 0;
+        
         int count = 0;
         for( int i = 0; i < N; i++ ){
-            total += a[i] - b[i];
-            if( total >= 0 ){
-                count++;
+            long total = 0;
+            int j = i;
+            while(true){
+                total += a[i] - b[i];
+                if( total >= 0 && j == (i + N - 1) % N){
+                    count++;
+                    break;
+                }
             }
+            
         }
         System.out.println(count);
         sc.close();
