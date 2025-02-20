@@ -1,3 +1,4 @@
+package Heap;
 // Java program for building Heap from Array
 import java.util.Scanner;
 public class BuildHeap {
