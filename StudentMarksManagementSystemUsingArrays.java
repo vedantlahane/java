@@ -15,6 +15,7 @@ public class StudentMarksManagementSystemUsingArrays {
             System.out.println("1. Add Student");
             System.out.println("2. Remove Student");
             System.out.println("3. Update Marks");
+            
             System.out.println("4. Display Students");
             System.out.println("5. Exit");
 
