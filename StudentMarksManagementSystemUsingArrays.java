@@ -26,7 +26,6 @@ public class StudentMarksManagementSystemUsingArrays {
                     System.out.println("Enter the marks of the student:");
                     int mark = sc.nextInt();
                     if (mark > 0 && mark <= 100) {
-
                         if (ind < n) {
                             names[ind] = name;
                             marks[ind] = mark;
@@ -37,6 +36,9 @@ public class StudentMarksManagementSystemUsingArrays {
                         }
                     } else {
                         System.out.println("Marks should be between 1 and 100.");
+                        mark = sc.nextInt();
+                        marks[ind--] = mark;
+                        System.out.println("Student added successfully");
                     }
                     break;
                 case 2:
