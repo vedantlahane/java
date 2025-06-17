@@ -72,5 +72,6 @@ public class CountPairsWhoseSumLessThanTarget {
         int target = scanner.nextInt();
 
         System.out.println("Output: " + counter.countPairs(nums, target));
+        scanner.close();
     }
 }

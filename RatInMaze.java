@@ -37,7 +37,7 @@ public class RatInMaze {
                 maze[i][j] = sc.nextInt();
             }
         }
-        
+        sc.close();
         
     }
 }
