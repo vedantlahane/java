@@ -9,6 +9,14 @@ public class IPAddressValidOrNot {
         if(parts.length != 4) isValid = false;
         else{
             for(String part: parts){
+                try {
+                    Integer.parseInt(part);
+                }
+                catch (NumberFormatException e) {
+                    isValid = false;
+                    System.out.println(e);
+                    break;
+                }
                 int num = Integer.parseInt(part);
                 if(num<0 ||num > 255){
                     isValid = false;
