@@ -1,5 +1,5 @@
 import  java.util.*;
-public class IPAdressValidOrNot {
+public class IPAddressValidOrNot {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the IP address:");
