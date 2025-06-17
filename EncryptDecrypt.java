@@ -6,6 +6,11 @@ public class EncryptDecrypt {
         String str = sc.nextLine();
         System.out.println("Enter E to encrypt or D to decrypt:");
         char choice = sc.nextLine().charAt(0);
+        if(choice != 'E' || choice != 'D') {
+            System.out.println("Enter valid letter");
+            sc.close();
+            return;
+        }
         String res =  "";
         for(int i=0; i<str.length(); i++){
             char ch = str.charAt(i);
