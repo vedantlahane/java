@@ -2,6 +2,7 @@ import java.util.*;
 
 public class Patterns {
     public static void pattern1(int n) {
+        System.out.println("Pattern  1");
         int num = 1;
         for (int i = 0; i < n; i++) {
             for (int j = i; j < n; j++) {
@@ -14,6 +15,7 @@ public class Patterns {
     }
 
     public static void pattern2(int n) {
+        System.out.println("Pattern 2");
         for (int i = 0; i < n; i++) {
             int temp = n;
             int num = i + 1;
@@ -28,6 +30,7 @@ public class Patterns {
     }
 
     public static void pattern3(int n) {
+        System.out.println("Pattern 3");
         int start = 1;
         for (int i = 1; i <= n; i++) {
             int num = start;
@@ -41,6 +44,7 @@ public class Patterns {
     }
 
     public static void pattern4(int n) {
+        System.out.println("Pattern 4");
         int num = n - 1;
         int num1 = 1;
         for (int i = 0; i < n; i++) {
@@ -59,6 +63,7 @@ public class Patterns {
     }
 
     public static void pattern5(int n) {
+        System.out.println("Pattern 5");
         int[][] matrix = new int[n][n];
 
         int num = 1;
@@ -81,6 +86,7 @@ public class Patterns {
     }
 
     public static void pattern6(int n) {
+        System.out.println("Pattern 6");
         int[][] matrix = new int[n][n];
 
         int num = 1;
