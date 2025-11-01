@@ -73,5 +73,6 @@ public class BoundaryTraversalOfTree{
                 System.out.println("Please enter a valid integer or 'done' to finish.");
             }
         }
+        sc.close();
     }
 }
