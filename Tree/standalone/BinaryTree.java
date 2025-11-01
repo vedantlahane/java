@@ -1,3 +1,5 @@
+package Tree.standalone;
+
 public class BinaryTree {
     public static class TreeNode {
         int val;

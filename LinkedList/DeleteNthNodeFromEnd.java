@@ -1,3 +1,4 @@
+package LinkedList;
 import java.util.Scanner;
 public class DeleteNthNodeFromEnd {
     public static class ListNode{

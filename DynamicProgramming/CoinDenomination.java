@@ -1,3 +1,4 @@
+package DynamicProgramming;
 import java.util.Scanner;
 public class CoinDenomination {
     public static int coinChange( int coins[], int amount ){

@@ -1,3 +1,5 @@
+package DynamicProgramming;
+
 //given a " 4 * n " grid, find the number of ways to tile the grid using 1 * 4 tiles
 //tiles can be placed horizontally or vertically
 import java.util.Scanner;

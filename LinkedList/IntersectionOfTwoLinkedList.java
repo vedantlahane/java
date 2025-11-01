@@ -1,3 +1,4 @@
+package LinkedList;
 import java.util.Scanner;
 import java.util.InputMismatchException;
 public class IntersectionOfTwoLinkedList {
@@ -34,8 +35,7 @@ public class IntersectionOfTwoLinkedList {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        try {
+        try (Scanner sc = new Scanner(System.in)) {
             System.out.println("Enter the number of elements in the first Linked List: ");
             int n = sc.nextInt();
             System.out.println("Enter the number of elements in the second Linked List: ");

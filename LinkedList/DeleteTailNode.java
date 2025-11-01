@@ -1,3 +1,4 @@
+package LinkedList;
 import java.util.Scanner;
 public class DeleteTailNode {
     public class Node {

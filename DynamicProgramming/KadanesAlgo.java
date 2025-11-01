@@ -1,3 +1,4 @@
+package DynamicProgramming;
 import java.util.Scanner;
 public class KadanesAlgo {
     public static int maxSubArraySum(int[] arr){

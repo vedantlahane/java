@@ -1,4 +1,4 @@
-import java.util.*;
+package DynamicProgramming;
 public class JumpGame {
     public static boolean canJump(int[] nums) {
         // Initialize the maximum

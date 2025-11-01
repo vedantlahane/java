@@ -1,3 +1,4 @@
+package DynamicProgramming;
 import java.util.Scanner;
 public class MinCostOfJoiningNRopes {
     public static int minCost( int ropes[]){

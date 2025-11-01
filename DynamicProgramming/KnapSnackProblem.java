@@ -1,3 +1,4 @@
+package DynamicProgramming;
 import java.util.Scanner;
 public class KnapSnackProblem {
     public static void main( String args[] ){

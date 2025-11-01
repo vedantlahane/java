@@ -1,3 +1,4 @@
+package Tree.standalone;
 import java.util.Scanner;
 public class binaryTreeTraversal {
     public static class Node{

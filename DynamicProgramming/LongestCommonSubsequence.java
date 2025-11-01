@@ -1,3 +1,4 @@
+package DynamicProgramming;
 import java.util.Scanner;
 public class LongestCommonSubsequence {
     public static int lcs( String s1, String s2 ){

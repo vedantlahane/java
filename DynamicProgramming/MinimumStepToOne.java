@@ -1,3 +1,5 @@
+package DynamicProgramming;
+
 // Minimum Step To One
 
 // Problem statement is very easy. On a positive integer, you can perform any one of the following 3 steps.

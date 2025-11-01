@@ -1,9 +1,8 @@
-
+package LinkedList;
 public class DeleteTheMiddleNode {
-    
 
-// Node class represents a node in a linked list
-class Node {
+    // Node class represents a node in a linked list
+    class Node {
     // Data stored in the node
     int data; 
      // Pointer to the next node in the list
