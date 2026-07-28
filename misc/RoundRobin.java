@@ -24,6 +24,8 @@ public class RoundRobin {
         Queue<Integer> queue = new LinkedList<>();
         for(int i = 0; i < n; i++) {
             queue.add(i); // Add process indices to the queue
-        
+        }
+
+        sc.close();
     }
 }
